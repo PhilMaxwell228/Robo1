@@ -28,6 +28,33 @@ pip install PyQt5 pip show PyQt5
 
 мб в дебагинг меню потыкать состандартным интерпритатором
 
+Установка tkinter на линукс
+sudo apt-get install python3-tk
+
+В стандартной библиотеке Python уже включен модуль tkinter, так что вам не нужно устанавливать его отдельно, если вы используете Windows или macOS. Однако, на системах Linux может потребоваться установить дополнительные пакеты для поддержки Tkinter.
+Установка Tkinter
+На Windows и macOS
+
+На Windows и macOS, tkinter обычно устанавливается вместе с Python, поэтому дополнительные действия не требуются.
+На Linux
+
+На системах Linux, например, Ubuntu или Debian, может потребоваться установить пакет python3-tk с помощью менеджера пакетов. Для установки на Ubuntu/Debian, используйте следующую команду в терминале:
+
+sudo apt-get install python3-tk
+
+Проверка установки Tkinter
+Чтобы проверить, установлен ли Tkinter попробовать запустить простой скрипт на Python:
+
+import tkinter as tk
+
+root = tk.Tk()
+root.title("Tkinter Test")
+label = tk.Label(root, text="Hello, Tkinter!")
+label.pack()
+root.mainloop()
+
+
+
 
 ```
 
